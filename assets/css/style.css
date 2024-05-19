@@ -1,0 +1,297 @@
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 51px;
+    background-color: red;
+    z-index: 898;
+}
+
+.logo-rapido {
+    margin-top: -90px;
+}
+
+.charge_fini {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s ease-in, visibility 0.7s ease-in;
+}
+
+.notification {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    bottom: 45px;
+    left: 3px;
+    width: max-content;
+    background-color: green;
+    padding: 0px 10px 5px 10px;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 10px 10px 10px 0px;
+    z-index: 900;
+}
+
+.contenu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 42px;
+    overflow: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 896;
+    padding: 8px;
+}
+
+.logout {
+    background-color: orange;
+    padding: 1px 6px 1px 6px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid orange;
+    font-family: cursive;
+}
+
+.logout svg {
+    fill: rgb(58, 55, 55);
+}
+
+
+.logout:hover {
+    border: 2px solid orange;
+    background-color: rgb(58, 55, 55);
+    color: orange;
+}
+
+.logout:hover svg {
+    fill: orange;
+
+}
+
+.account {
+    text-transform: capitalize;
+    color: orange;
+    font-weight: bold;
+}
+
+svg {
+    margin-top: -4px;
+}
+
+table tr svg {
+    margin-top: -3px;
+}
+
+.actif {
+    font-weight: bold;
+    color: #A7D129;
+}
+
+.actif:hover {
+    font-weight: bold;
+    color: #A7D129;
+}
+
+.monNav {
+    background-color: #616f39;
+}
+
+.montext-color-1 {
+    color: #000000;
+}
+
+.montext-color-2 {
+    color: #3E432E;
+}
+
+.montext-color-3 {
+    color: #616f39;
+}
+
+.montext-color-4 {
+    color: #A7D129;
+}
+
+.monbg-color-1 {
+    background-color: #000000;
+}
+
+.monbg-color-2 {
+    background-color: #3E432E;
+}
+
+.monbg-color-3 {
+    background-color: #616f39;
+}
+
+.monbg-color-4 {
+    background-color: #A7D129;
+}
+
+.mapaletteGauche {
+    position: fixed;
+    top: 51px;
+    left: 0;
+    bottom: 40px;
+    z-index: 896;
+}
+
+.action1 {
+    color: black;
+    background-color: #A7D129;
+}
+
+.action1:hover {
+    color: lightcyan;
+    background-color: #8aad24;
+}
+
+.action2 {
+    color: red;
+    background-color: #616f39;
+}
+
+.action2:hover {
+    color: lightcyan;
+    background-color: #8aad24;
+}
+
+/* mise en forme de la forme de confirmation */
+
+.confirme-action-modal {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1002;
+    user-select: none;
+    transition: opacity 1s ease-in, visibility 1s ease-in;
+}
+
+.confirme-action-content {
+    background-color: white;
+    border: 1px solid #616f39;
+    width: max-content;
+    max-width: 350px;
+    padding: 20px 20px 30px 20px;
+    z-index: 1003;
+    border-radius: 5px;
+    animation: slideInFromTop 0.5s ease-in-out forwards;
+}
+
+.action-text {
+    min-width: 200px;
+    text-align: center;
+    color: rgb(20, 2, 2);
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.action-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.action-btn div a, .action-btn div span {
+    color: #3E432E;
+    text-decoration: none;
+    background-color: #8aad24;
+
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.action-btn div a:hover, .action-btn div span:hover {
+    background-color: #A7D129;
+    color: white;
+}
+
+.max-content-width {
+    width: max-content;
+    background-color: red;
+}
+
+/* ***************** *********************************** */
+
+table {
+    width: 100%;
+}
+
+.operations {
+    display: table-cell;
+}
+
+td[class="operations"] {
+    width: 120px;
+}
+
+td[class="nom"] {
+    text-transform: uppercase;
+}
+
+
+.plus {
+    width: 60px;
+}
+
+.sexe {
+    width: 50px;
+}
+
+.email, .sexe, .telephone {
+    display: table-cell;
+}
+
+/* responsivité de tableau */
+@media screen and (max-width: 1200px) {
+    .email, .sexe, .telephone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 993px) {
+
+    .operations {
+        display: none;
+    }
+
+    #droit {
+        display: none;
+    }
+
+    .plus {
+        display: table-cell;
+    }
+
+    .date, .heure, .point_arrivee {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .prenoms {
+        display: none;
+    }
+}
